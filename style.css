@@ -43,31 +43,86 @@ h5 {
 
 /* ------------- */
 
-.wrap {
+.wrap,
+.calc-wrap {
   display: flex;
-  padding: 10px;
+  padding: 2px;
   justify-content: space-around;
-
   border: 2px solid lightgrey;
-
-  background-color: rgb(180, 180, 180);
   background: #131419;
 }
 
-.column div {
-  display: block;
+.buttons-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column div,
+.calc-button,
+.equal {
+  display: flex;
   width: 50px;
   height: 50px;
   background: #18191f;
-  line-height: 55px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
   border-radius: 15px;
   box-shadow: -2px -2px 3px rgba(255, 255, 255, 0.05),
     3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
+.calc-button,
+.equal {
+  width: 35px;
+  height: 35px;
+  color: white;
+}
+
+.calc-button:focus,
+.cancel:focus,
+.equal:focus {
+  outline: 0;
+}
+
+.equal {
+  background: rgb(88, 18, 18);
+  width: 3.5em;
+}
+.cancel {
+  background: green;
+  width: 4em;
+}
+
 .symbol {
   color: red;
   font-size: 20px;
+  margin-top: 20px;
+}
+
+.display {
+  width: 90%;
+  height: 3rem;
+  font-size: 30px;
+  color: rgb(1, 1, 56);
+  margin: 20px;
+  background-color: #7a89d6;
+}
+
+.calc-wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 370px;
+  min-width: 349px;
+}
+
+#json-text {
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+input,
+.display {
+  padding: 10px;
+  border-radius: 6px;
 }

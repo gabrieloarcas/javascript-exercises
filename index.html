@@ -72,12 +72,59 @@
             </div>
           </div>
         </div>
+        <!-- 4. Calculator -->
+        <div class="col col-sm box">
+          <div class="col box-inside">
+            <h5>4. Calculator</h5>
+            <div class="calc-wrap">
+              <form>
+                <input type="text" class="display" />
+              </form>
 
-        <div class="col col-sm box">5</div>
+              <div class="col buttons-area">
+                <button type="button" class="calc-button" attr="1">1</button>
+                <button type="button" class="calc-button" attr="2">2</button>
+                <button type="button" class="calc-button" attr="3">3</button>
+                <button type="button" class="calc-button" attr="4">4</button>
+                <button type="button" class="calc-button" attr="5">5</button>
+                <button type="button" class="calc-button" attr="6">6</button>
+                <button type="button" class="calc-button" attr="7">7</button>
+                <button type="button" class="calc-button" attr="8">8</button>
+                <button type="button" class="calc-button" attr="9">9</button>
+                <button type="button" class="calc-button" attr="0">0</button>
+                <button type="button" class="calc-button" attr=".">.</button>
+                <button type="button" class="calc-button" attr="*">*</button>
+                <button type="button" class="calc-button" attr="/">/</button>
+                <button type="button" class="calc-button" attr="+">+</button>
+                <button type="button" class="calc-button" attr="-">-</button>
+                <button type="button" class="equal" attr="=">
+                  =
+                </button>
+                <button type="button" class="cancel calc-button">C</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="row">
-        <div class="col col-sm box">7</div>
-        <div class="col col-sm box">8</div>
+        <!-- 5. Promises, API -->
+        <div class="col col-sm box">
+          <div class="col box-inside">
+            <h5>5. Fetch API Data</h5>
+            <p id="json-text"></p>
+          </div>
+        </div>
+        <!-- 6. Time now -->
+        <div class="col col-sm box">
+          <div class="col box-inside">
+            <h5>6. Get Time</h5>
+            <p id="timer"></p>
+            <p id="milliseconds"></p>
+            <button type="button" id="start" class="btn btn-primary btn-bg">
+              Get Time
+            </button>
+          </div>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
